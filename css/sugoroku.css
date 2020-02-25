@@ -1,0 +1,124 @@
+/*
+ * ツリーベル四日市事業所
+ * 第3回PGコンテスト用ベースすごろくプログラム
+ * CSSファイル
+ */
+
+/* 更新履歴 */
+/* 2020 1/16 和田 新規作成 */
+
+
+/*国吉 背景設定 */
+#background{
+	background:url("../images/back.jpg")
+}
+
+#gameArea {
+	display: none;
+}
+
+#startGameBtn {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		to(#0269a1));
+	background: linear-gradient(
+		top,
+		#ffffff 0%,
+		#0269a1);
+	border-radius: 30px;
+	border: 1px solid #004e6b;
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+#boardArea {
+	display:block;
+	width: 600px;
+	height:400px;
+	border:1px solid black;
+	overflow: scroll;
+	background:#FFFF99
+}
+#board span {
+	margin:4px;
+}
+.boardMass {
+	border:2px solid black;
+	width:68px;
+	height:68px;
+	display:inline-block;
+	vertical-align: top;
+	background:#FFFFFF
+}
+.karaMass {
+	width:72px;
+	height:72px;
+	display:inline-block;
+}
+
+.playerMassIcon {
+	display: inline-block;
+}
+
+#dice {
+	display:inline-block;
+	width:25px;
+	height:25px;
+	text-align:center;
+	border:1px solid black;
+}
+
+#diceroll{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		to(#0281a1));
+	background: linear-gradient(
+		top,
+		#ffffff 0%,
+		#0281a1);
+	border-radius: 30px;
+	border: 1px solid #004e6b;
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+#logMsg {
+	display:block;
+	width :300px;
+	height:402px;
+	border:1px solid black;
+	text-align:center;
+	overflow: scroll;
+	position: absolute;;
+    top: 123px;
+    left: 450px;
+	}
+
+select {
+	width:150px;
+	height: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border:solid 1px;
+    background-color:white;
+    color: black;
+}
